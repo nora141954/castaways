@@ -1,0 +1,386 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #0f172a;
+  color: #eefaf7;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#app {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(#6dd8ff, #3aa0d8 45%, #1e7f4a 46%, #2c8a54 100%);
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#44b6ff, #39a0d8 38%, #2d8b5f 39%, #246f45 100%);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(5, 12, 18, 0.52);
+  backdrop-filter: blur(2px);
+  z-index: 20;
+}
+
+.overlay.visible {
+  display: flex;
+}
+
+.panel {
+  background: rgba(19, 36, 42, 0.83);
+  border: 2px solid rgba(164, 222, 198, 0.5);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+  border-radius: 18px;
+}
+
+.menu-panel {
+  width: min(90vw, 700px);
+  padding: 32px 28px 20px;
+  text-align: center;
+}
+
+.title-wrap h1 {
+  font-size: clamp(2.4rem, 5vw, 5rem);
+  letter-spacing: 0.12em;
+  margin: 0;
+  text-shadow: 0 0 18px rgba(96, 255, 202, 0.75);
+}
+
+#subtitle {
+  margin-top: 12px;
+  color: #d8f6ff;
+  font-size: 1.05rem;
+}
+
+.language-group {
+  margin-top: 26px;
+}
+
+#languageTitle {
+  margin-bottom: 12px;
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #dceef4;
+}
+
+.language-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(150px, 1fr));
+  gap: 12px;
+}
+
+.lang-btn,
+.primary-btn,
+.touch-btn,
+.touch-action,
+.inventory-item,
+.dialog-option,
+.close-btn {
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.12s ease, filter 0.12s ease;
+}
+
+.lang-btn {
+  background: rgba(12, 70, 72, 0.8);
+  color: #eafcff;
+  padding: 12px 16px;
+  font-size: 1rem;
+  border: 1px solid rgba(133, 220, 203, 0.5);
+}
+
+.lang-btn.selected {
+  background: linear-gradient(135deg, #2fc4a0, #67d9e2);
+  color: #042729;
+  font-weight: 700;
+}
+
+.lang-btn:hover,
+.primary-btn:hover,
+.touch-btn:hover,
+.touch-action:hover,
+.inventory-item:hover,
+.dialog-option:hover,
+.close-btn:hover {
+  transform: translateY(-1px) scale(1.01);
+  filter: brightness(1.08);
+}
+
+.primary-btn {
+  margin-top: 22px;
+  padding: 14px 32px;
+  font-size: 1.1rem;
+  background: linear-gradient(135deg, #baf2d2, #8de8c0);
+  color: #102a2c;
+  font-weight: 700;
+}
+
+#hud {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 5;
+}
+
+#hud.hidden {
+  display: none;
+}
+
+.stats-panel,
+.objective-panel,
+.inventory-panel {
+  position: absolute;
+  background: rgba(9, 31, 34, 0.75);
+  border: 2px solid rgba(160, 215, 205, 0.45);
+  border-radius: 16px;
+}
+
+.stats-panel {
+  top: 18px;
+  left: 18px;
+  width: min(30vw, 360px);
+  padding: 12px 14px 10px;
+}
+
+.stat-row {
+  display: grid;
+  grid-template-columns: 70px 1fr 36px;
+  gap: 8px;
+  align-items: center;
+  margin: 8px 0;
+  font-size: 0.8rem;
+}
+
+.bar {
+  height: 10px;
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  transition: width 0.3s ease;
+  border-radius: 999px;
+}
+
+.bar-fill.hunger { background: linear-gradient(90deg, #ffcf5d, #ff8a54); }
+.bar-fill.thirst { background: linear-gradient(90deg, #72d9ff, #4c89ff); }
+.bar-fill.health { background: linear-gradient(90deg, #89f58a, #3dbd73); }
+.bar-fill.energy { background: linear-gradient(90deg, #c1a5ff, #7a72ff); }
+
+.objective-panel {
+  top: 18px;
+  right: 18px;
+  width: min(32vw, 360px);
+  padding: 16px 14px;
+}
+
+.objective-panel h3,
+.inventory-panel h3 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+#questList {
+  margin: 0;
+  padding-left: 16px;
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+#questList li.complete {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.inventory-panel {
+  left: 18px;
+  bottom: 18px;
+  width: min(32vw, 310px);
+  padding: 12px 10px;
+}
+
+.inventory-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  min-height: 42px;
+}
+
+.inventory-item {
+  padding: 8px 10px;
+  background: rgba(100, 174, 255, 0.18);
+  color: #ecfbff;
+  border: 1px solid rgba(160, 211, 255, 0.5);
+  font-size: 0.8rem;
+}
+
+.inventory-item.empty {
+  background: rgba(255, 255, 255, 0.06);
+  border-style: dashed;
+  color: rgba(255,255,255,0.6);
+}
+
+.interaction-bubble {
+  position: absolute;
+  left: 50%;
+  bottom: 72px;
+  transform: translateX(-50%);
+  padding: 10px 14px;
+  background: rgba(12, 29, 32, 0.82);
+  border: 1px solid rgba(161, 227, 223, 0.45);
+  border-radius: 999px;
+  font-size: 0.9rem;
+  color: #f0f9ff;
+  white-space: nowrap;
+}
+
+.interaction-bubble.hidden {
+  display: none;
+}
+
+.dialog {
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+  width: min(90vw, 500px);
+  max-height: 68vh;
+  padding: 12px 16px 16px;
+  z-index: 18;
+}
+
+.dialog.hidden {
+  display: none;
+}
+
+.dialog-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.dialog-header h3 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.close-btn {
+  width: 28px;
+  height: 28px;
+  background: rgba(255,255,255,0.09);
+  color: white;
+  font-size: 1.2rem;
+}
+
+.dialog-text {
+  line-height: 1.5;
+  font-size: 0.96rem;
+  color: #def9ff;
+  margin-bottom: 12px;
+}
+
+.dialog-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dialog-option {
+  text-align: left;
+  background: rgba(98, 168, 255, 0.14);
+  color: #f0f3ff;
+  border: 1px solid rgba(128, 208, 255, 0.45);
+  padding: 10px 12px;
+  font-size: 0.9rem;
+}
+
+.touch-controls {
+  position: absolute;
+  left: 18px;
+  bottom: 18px;
+  z-index: 12;
+  display: flex;
+  align-items: flex-end;
+  gap: 14px;
+  pointer-events: auto;
+}
+
+.touch-controls.hidden {
+  display: none;
+}
+
+.touch-pad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.touch-middle-row {
+  display: flex;
+  gap: 8px;
+}
+
+.touch-btn,
+.touch-action {
+  background: rgba(18, 36, 40, 0.72);
+  color: #ecfeff;
+  border: 1px solid rgba(170, 225, 220, 0.5);
+  width: 52px;
+  height: 52px;
+  font-size: 1.3rem;
+}
+
+.touch-action {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  font-weight: 700;
+  background: rgba(19, 82, 72, 0.8);
+}
+
+@media (max-width: 760px) {
+  .stats-panel {
+    width: 210px;
+  }
+
+  .objective-panel {
+    width: 220px;
+  }
+
+  .inventory-panel {
+    width: 180px;
+  }
+
+  .language-grid {
+    grid-template-columns: 1fr;
+  }
+}

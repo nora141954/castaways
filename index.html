@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>STRANDED</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="gameCanvas" width="1280" height="720"></canvas>
+
+      <div id="menuOverlay" class="overlay visible">
+        <div class="panel menu-panel">
+          <div class="title-wrap">
+            <h1>STRANDED</h1>
+            <p id="subtitle">A survivor's story on a lonely island</p>
+          </div>
+
+          <div class="language-group">
+            <h2 id="languageTitle">Language / Taal / Idioma / Langue / 语言</h2>
+            <div class="language-grid" id="languageGrid">
+              <button class="lang-btn" data-lang="nl">Nederlands</button>
+              <button class="lang-btn" data-lang="en">English</button>
+              <button class="lang-btn" data-lang="es">Español</button>
+              <button class="lang-btn" data-lang="fr">Français</button>
+              <button class="lang-btn" data-lang="zh">中文</button>
+            </div>
+          </div>
+
+          <button id="startButton" class="primary-btn">Start</button>
+        </div>
+      </div>
+
+      <div id="hud" class="hidden">
+        <div class="panel stats-panel">
+          <div class="stat-row">
+            <span id="hungerLabel">Hunger</span>
+            <div class="bar"><div id="hungerBar" class="bar-fill hunger"></div></div>
+            <span id="hungerValue">80</span>
+          </div>
+          <div class="stat-row">
+            <span id="thirstLabel">Thirst</span>
+            <div class="bar"><div id="thirstBar" class="bar-fill thirst"></div></div>
+            <span id="thirstValue">80</span>
+          </div>
+          <div class="stat-row">
+            <span id="healthLabel">Health</span>
+            <div class="bar"><div id="healthBar" class="bar-fill health"></div></div>
+            <span id="healthValue">100</span>
+          </div>
+          <div class="stat-row">
+            <span id="energyLabel">Energy</span>
+            <div class="bar"><div id="energyBar" class="bar-fill energy"></div></div>
+            <span id="energyValue">80</span>
+          </div>
+        </div>
+
+        <div class="panel objective-panel">
+          <h3 id="objectiveTitle">Objectives</h3>
+          <ul id="questList"></ul>
+        </div>
+
+        <div class="panel inventory-panel">
+          <h3 id="inventoryTitle">Inventory</h3>
+          <div id="inventoryList" class="inventory-list"></div>
+        </div>
+
+        <div id="interactionBubble" class="interaction-bubble hidden"></div>
+      </div>
+
+      <div id="dialogBox" class="panel dialog hidden">
+        <div class="dialog-header">
+          <h3 id="dialogName">NPC</h3>
+          <button id="closeDialog" class="close-btn">×</button>
+        </div>
+        <div id="dialogText" class="dialog-text"></div>
+        <div id="dialogOptions" class="dialog-options"></div>
+      </div>
+
+      <div id="touchControls" class="touch-controls hidden">
+        <div class="touch-pad">
+          <button class="touch-btn" data-key="ArrowUp">▲</button>
+          <div class="touch-middle-row">
+            <button class="touch-btn" data-key="ArrowLeft">◀</button>
+            <button class="touch-btn" data-key="ArrowDown">▼</button>
+            <button class="touch-btn" data-key="ArrowRight">▶</button>
+          </div>
+        </div>
+        <button id="touchAction" class="touch-action">E</button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
