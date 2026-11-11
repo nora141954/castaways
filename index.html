@@ -1,94 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>STRANDED</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div id="gameRoot">
-      <canvas id="gameCanvas" width="1280" height="720"></canvas>
-
-      <div id="menuOverlay" class="overlay visible">
-        <div class="menuPanel">
-          <h1>STRANDED</h1>
-          <p id="menuSubtitle">A survivor's story on a lonely island</p>
-
-          <div class="langBlock">
-            <h2>Language / Taal / Idioma / Langue / 语言</h2>
-            <div class="langGrid">
-              <button class="langBtn selected" data-lang="nl">Nederlands</button>
-              <button class="langBtn" data-lang="en">English</button>
-              <button class="langBtn" data-lang="es">Español</button>
-              <button class="langBtn" data-lang="fr">Français</button>
-              <button class="langBtn" data-lang="zh">中文</button>
-            </div>
-          </div>
-
-          <button id="startBtn" class="startBtn">Start</button>
-        </div>
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <title>STRANDED — Island survival</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main id="game">
+    <canvas id="view" aria-label="First-person island game"></canvas>
+    <div id="eyeWake" aria-hidden="true"><div class="lid lid-top"></div><div class="lid lid-bottom"></div><div class="wake-text">…</div></div>
+    <section id="menu" class="screen">
+      <div class="menu-card"><div class="eyebrow">A SURVIVAL STORY</div><h1>STRANDED</h1><p id="subtitle">Je wordt wakker op een onbekend eiland.</p>
+        <div class="languages" aria-label="Choose language">
+          <button data-lang="nl" class="active">Nederlands</button><button data-lang="en">English</button><button data-lang="es">Español</button><button data-lang="fr">Français</button><button data-lang="zh">中文</button>
+        </div><button id="start" class="primary">Wakker worden <span>→</span></button>
+        <p class="menu-help">WASD bewegen · muis kijken · E praten / oppakken</p>
       </div>
-
-      <div id="hud" class="hidden">
-        <div class="statsPanel panel">
-          <div class="stat">
-            <label id="hungerLabel">Hunger</label>
-            <div class="bar"><div id="hungerBar" class="fill hunger"></div></div>
-            <span id="hungerValue">80</span>
-          </div>
-          <div class="stat">
-            <label id="thirstLabel">Thirst</label>
-            <div class="bar"><div id="thirstBar" class="fill thirst"></div></div>
-            <span id="thirstValue">80</span>
-          </div>
-          <div class="stat">
-            <label id="healthLabel">Health</label>
-            <div class="bar"><div id="healthBar" class="fill health"></div></div>
-            <span id="healthValue">100</span>
-          </div>
-          <div class="stat">
-            <label id="energyLabel">Energy</label>
-            <div class="bar"><div id="energyBar" class="fill energy"></div></div>
-            <span id="energyValue">80</span>
-          </div>
-        </div>
-
-        <div class="infoPanel panel">
-          <h3 id="objectiveTitle">Objectives</h3>
-          <ul id="questList"></ul>
-        </div>
-
-        <div class="inventoryPanel panel">
-          <h3 id="inventoryTitle">Inventory</h3>
-          <div id="inventoryList"></div>
-        </div>
-
-        <div id="interactBubble" class="interactBubble hidden"></div>
-      </div>
-
-      <div id="dialogBox" class="panel dialog hidden">
-        <div class="dialogHeader">
-          <h3 id="dialogName">NPC</h3>
-          <button id="closeDialog">×</button>
-        </div>
-        <div id="dialogText"></div>
-        <div id="dialogOptions"></div>
-      </div>
-
-      <div id="touchControls" class="touchControls hidden">
-        <div class="pad">
-          <button class="touchBtn" data-key="up">▲</button>
-          <div class="row">
-            <button class="touchBtn" data-key="left">◀</button>
-            <button class="touchBtn" data-key="down">▼</button>
-            <button class="touchBtn" data-key="right">▶</button>
-          </div>
-        </div>
-        <button id="touchAction" class="touchAction">E</button>
-      </div>
-    </div>
-
-    <script src="app.js"></script>
-  </body>
+    </section>
+    <section id="hud" class="hidden" aria-live="polite">
+      <div class="survival panel"><div class="stat"><span id="hungerLabel">Honger</span><i><b id="hungerBar"></b></i><strong id="hungerVal">82</strong></div><div class="stat"><span id="thirstLabel">Dorst</span><i><b id="thirstBar"></b></i><strong id="thirstVal">80</strong></div><div class="stat"><span id="healthLabel">Gezondheid</span><i><b id="healthBar"></b></i><strong id="healthVal">100</strong></div><div class="stat"><span id="energyLabel">Energie</span><i><b id="energyBar"></b></i><strong id="energyVal">85</strong></div></div>
+      <div class="quests panel"><h2 id="questHeading">Eerste plan</h2><ul id="quests"></ul></div>
+      <div class="reticle"></div><div id="prompt" class="prompt hidden"></div><div id="toast" class="toast hidden"></div>
+      <div class="inventory panel"><h2 id="inventoryHeading">Rugzak</h2><div id="items"></div></div>
+      <div class="controls-hint">WASD bewegen <span>•</span> muis kijken <span>•</span> E interactie</div>
+      <div class="mobile-pad"><button data-move="forward">▲</button><div><button data-move="left">◀</button><button data-move="back">▼</button><button data-move="right">▶</button></div><button id="mobileUse">E</button></div>
+      <button id="lookTouch" class="look-touch" aria-label="Drag to look"></button>
+    </section>
+    <section id="dialog" class="dialog hidden"><div class="dialog-top"><div><small id="dialogKicker">OVERLEVEN</small><h2 id="speaker"></h2></div><button id="dialogClose" aria-label="Sluiten">×</button></div><p id="dialogLine"></p><div id="answers"></div></section>
+  </main>
+  <script src="app.js"></script>
+</body>
 </html>
