@@ -1,7 +1,6 @@
 const translations = {
   nl: {
-    subtitle: 'Een overlevingsverhaal op een verlaten eiland',
-    languageTitle: 'Taal / Language / Idioma / Langue / 语言',
+    menuSubtitle: 'Een overlevingsverhaal op een verlaten eiland',
     start: 'Start',
     hunger: 'Honger',
     thirst: 'Dorst',
@@ -9,36 +8,29 @@ const translations = {
     energy: 'Energie',
     objectives: 'Doelen',
     inventory: 'Inventaris',
-    objectiveGatherCoconuts: 'Verzamel 2 kokosnoten.',
-    objectiveWater: 'Zoek een fles water.',
-    objectiveWood: 'Verzamel 3 stukken hout.',
-    objectiveCampfire: 'Maak een kampvuur.',
-    objectiveTalk: 'Praat met de anderen en maak een plan.',
-    taskComplete: 'Voltooid',
-    introWake: 'Je schrikt wakker. Het ruikt naar zout, palmbladeren en zweet. De lucht is warm. Waar ben je?',
-    introLook: 'Je kijkt rond. Er liggen strand, rotsen, bomen en een stille ondergroei. Drie figuren staan bij de kust.',
-    interactItem: 'Druk E om op te pakken',
-    interactNpc: 'Druk E om te praten',
+    gatherCoconut: 'Verzamel 2 kokosnoten.',
+    findWater: 'Zoek een fles water.',
+    gatherWood: 'Verzamel 3 stukken hout.',
+    buildCampfire: 'Maak een kampvuur.',
+    talkPlan: 'Praat met de anderen en maak een plan.',
+    introWake: 'Je schrikt wakker. De zon schijnt fel in je gezicht. Je voelt de warmte op je huid. Waar ben je?',
+    introLook: 'Je kijkt om je heen. Drie mensen staan bij de kust. Je ziet een strand, rotsen, palmbomen en bos. Je moet zien te overleven.',
+    interactPickup: 'Druk E om op te pakken',
+    interactTalk: 'Druk E om te praten',
     noItem: 'Geen voorwerp',
-    speakMilo: 'Milo is nerveus en kijkt voortdurend naar de bossen.',
-    speakKai: 'Kai staat rechtop en doet alsof hij niet bang is.',
-    speakNoah: 'Noah draait zijn hoofd en bekijkt de omgeving met een koel, logisch oog.',
     planPrompt: 'Laten we een plan maken.',
-    campfireBuilt: 'Het kampvuur brandt. Je groep voelt zich een stuk sterker.',
+    campfireBuilt: 'Het kampvuur is aangestoken. De groep voelt zich sterker.',
     npcMilo: 'Milo',
     npcKai: 'Kai',
     npcNoah: 'Noah',
-    useItem: 'Gebruik voorwerp',
-    actionPick: 'Oppakken',
-    eventWaterFound: 'Je vindt een stevige waterfles in een rotsspleet.',
-    eventCampfire: 'Je hebt genoeg hout. Je zet een kampvuur op.',
-    winTitle: 'Je hebt een plan gemaakt',
-    winText: 'Jullie hebben een kampvuur, water, voedsel en een eerste, kleine basis. Het eiland is nog steeds gevaarlijk — maar nu hebben jullie een begin.',
+    eventWaterFound: 'Je vindt een waterfles in een rotsspleet.',
+    eventCampfire: 'Je hebt genoeg hout. Het kampvuur kan nu branden.',
+    winTitle: 'Jullie hebben een plan',
+    winText: 'Jullie hebben water, voedsel, hout en een kampvuur. Het eiland is nog gevaarlijk, maar nu is er een begin.',
     startButton: 'Start'
   },
   en: {
-    subtitle: 'A survivor story on a lonely island',
-    languageTitle: 'Language / Taal / Idioma / Langue / 语言',
+    menuSubtitle: 'A survivor story on a lonely island',
     start: 'Start',
     hunger: 'Hunger',
     thirst: 'Thirst',
@@ -46,36 +38,29 @@ const translations = {
     energy: 'Energy',
     objectives: 'Objectives',
     inventory: 'Inventory',
-    objectiveGatherCoconuts: 'Gather 2 coconuts.',
-    objectiveWater: 'Find a water bottle.',
-    objectiveWood: 'Collect 3 pieces of wood.',
-    objectiveCampfire: 'Build a campfire.',
-    objectiveTalk: 'Talk to the others and make a plan.',
-    taskComplete: 'Complete',
-    introWake: 'You wake up with a start. The air smells of salt, palm leaves and sweat. The heat is heavy. Where are you?',
-    introLook: 'You look around. There are beaches, rocks, trees and the hush of the forest around you. Three figures stand near the shore.',
-    interactItem: 'Press E to pick up',
-    interactNpc: 'Press E to talk',
+    gatherCoconut: 'Collect 2 coconuts.',
+    findWater: 'Find a water bottle.',
+    gatherWood: 'Collect 3 pieces of wood.',
+    buildCampfire: 'Build a campfire.',
+    talkPlan: 'Talk to the others and make a plan.',
+    introWake: 'You wake up suddenly. The sun hits your face. Warm air surrounds you. Where are you?',
+    introLook: 'You look around. Three people stand at the shore. You see beach, rocks, palm trees, and forest. You must survive.',
+    interactPickup: 'Press E to pick up',
+    interactTalk: 'Press E to talk',
     noItem: 'No item',
-    speakMilo: 'Milo is nervous and keeps glancing into the trees.',
-    speakKai: 'Kai stands tall and acts like nothing scares him.',
-    speakNoah: 'Noah watches the surroundings calmly and thinks before he speaks.',
     planPrompt: 'Let’s make a plan.',
-    campfireBuilt: 'The campfire is burning. The group feels stronger.',
+    campfireBuilt: 'The campfire is burning. The group feels safer.',
     npcMilo: 'Milo',
     npcKai: 'Kai',
     npcNoah: 'Noah',
-    useItem: 'Use item',
-    actionPick: 'Pick up',
-    eventWaterFound: 'You find a sturdy water bottle tucked in a rock crack.',
-    eventCampfire: 'You have enough wood. You build a campfire.',
+    eventWaterFound: 'You find a water bottle in a rock crack.',
+    eventCampfire: 'You have enough wood. The campfire can be lit now.',
     winTitle: 'You made a plan',
-    winText: 'You have water, food, and a small campfire. The island is still dangerous, but you are finally beginning to survive.',
+    winText: 'You have water, food, wood, and a campfire. The island is still dangerous, but now there is a start.',
     startButton: 'Start'
   },
   es: {
-    subtitle: 'Una historia de supervivencia en una isla aislada',
-    languageTitle: 'Idioma / Taal / Language / Langue / 语言',
+    menuSubtitle: 'Una historia de supervivencia en una isla aislada',
     start: 'Empezar',
     hunger: 'Hambre',
     thirst: 'Sed',
@@ -83,36 +68,29 @@ const translations = {
     energy: 'Energía',
     objectives: 'Objetivos',
     inventory: 'Inventario',
-    objectiveGatherCoconuts: 'Recoge 2 cocos.',
-    objectiveWater: 'Encuentra una botella de agua.',
-    objectiveWood: 'Recolecta 3 troncos.',
-    objectiveCampfire: 'Haz una fogata.',
-    objectiveTalk: 'Habla con los demás y haz un plan.',
-    taskComplete: 'Completado',
-    introWake: 'Te despiertas de golpe. Huele a sal, hojas de palmera y sudor. El calor pesa. ¿Dónde estás?',
-    introLook: 'Miras alrededor. Hay playas, rocas, árboles y un bosque silencioso. Tres figuras están cerca de la orilla.',
-    interactItem: 'Pulsa E para recoger',
-    interactNpc: 'Pulsa E para hablar',
+    gatherCoconut: 'Recoge 2 cocos.',
+    findWater: 'Encuentra una botella de agua.',
+    gatherWood: 'Recoge 3 troncos.',
+    buildCampfire: 'Haz una fogata.',
+    talkPlan: 'Habla con los demás y haz un plan.',
+    introWake: 'Te despiertas de repente. El sol te golpea la cara. El aire caliente te rodea. ¿Dónde estás?',
+    introLook: 'Miras a tu alrededor. Tres personas están en la playa. Ves arena, rocas, palmeras y bosque. Debes sobrevivir.',
+    interactPickup: 'Pulsa E para recoger',
+    interactTalk: 'Pulsa E para hablar',
     noItem: 'Sin objeto',
-    speakMilo: 'Milo está nervioso y mira constantemente hacia el bosque.',
-    speakKai: 'Kai se mantiene erguido como si nada le asustara.',
-    speakNoah: 'Noah observa con calma y piensa antes de hablar.',
     planPrompt: 'Hagamos un plan.',
-    campfireBuilt: 'La fogata arde. El grupo se siente más fuerte.',
+    campfireBuilt: 'La fogata está encendida. El grupo se siente más seguro.',
     npcMilo: 'Milo',
     npcKai: 'Kai',
     npcNoah: 'Noah',
-    useItem: 'Usar objeto',
-    actionPick: 'Recoger',
     eventWaterFound: 'Encuentras una botella de agua en una grieta de roca.',
-    eventCampfire: 'Tienes suficiente madera. Construyes una fogata.',
+    eventCampfire: 'Tienes suficiente madera. La fogata ya puede arder.',
     winTitle: 'Han hecho un plan',
-    winText: 'Tienen agua, comida y una pequeña fogata. La isla sigue siendo peligrosa, pero ahora comienzan a sobrevivir.',
+    winText: 'Tienen agua, comida, madera y una fogata. La isla sigue siendo peligrosa, pero ahora hay un comienzo.',
     startButton: 'Iniciar'
   },
   fr: {
-    subtitle: 'Une histoire de survie sur une île isolée',
-    languageTitle: 'Langue / Taal / Language / Idioma / 语言',
+    menuSubtitle: 'Une histoire de survie sur une île isolée',
     start: 'Commencer',
     hunger: 'Faim',
     thirst: 'Soif',
@@ -120,36 +98,29 @@ const translations = {
     energy: 'Énergie',
     objectives: 'Objectifs',
     inventory: 'Inventaire',
-    objectiveGatherCoconuts: 'Ramassez 2 noix de coco.',
-    objectiveWater: 'Trouvez une bouteille d’eau.',
-    objectiveWood: 'Collectez 3 morceaux de bois.',
-    objectiveCampfire: 'Construisez un feu de camp.',
-    objectiveTalk: 'Parlez aux autres et faites un plan.',
-    taskComplete: 'Terminé',
-    introWake: 'Tu te réveilles en sursaut. L’air sent le sel, les feuilles de palmier et la sueur. La chaleur pèse. Où es-tu ?',
-    introLook: 'Tu regardes autour de toi. Il y a des plages, des rochers, des arbres et une forêt silencieuse. Trois silhouettes se tiennent près du rivage.',
-    interactItem: 'Appuie sur E pour ramasser',
-    interactNpc: 'Appuie sur E pour parler',
+    gatherCoconut: 'Ramassez 2 noix de coco.',
+    findWater: 'Trouvez une bouteille d’eau.',
+    gatherWood: 'Collectez 3 morceaux de bois.',
+    buildCampfire: 'Construisez un feu de camp.',
+    talkPlan: 'Parlez aux autres et faites un plan.',
+    introWake: 'Tu te réveilles brusquement. Le soleil frappe ton visage. L’air chaud t’entoure. Où es-tu ?',
+    introLook: 'Tu regardes autour de toi. Trois personnes sont sur la plage. Tu vois du sable, des rochers, des palmiers et une forêt. Tu dois survivre.',
+    interactPickup: 'Appuie sur E pour ramasser',
+    interactTalk: 'Appuie sur E pour parler',
     noItem: 'Aucun objet',
-    speakMilo: 'Milo est nerveux et regarde constamment vers la forêt.',
-    speakKai: 'Kai se tient droit comme si rien ne l’effrayait.',
-    speakNoah: 'Noah observe calmement et réfléchit avant de parler.',
     planPrompt: 'Faisons un plan.',
-    campfireBuilt: 'Le feu de camp brûle. Le groupe se sent plus fort.',
+    campfireBuilt: 'Le feu de camp est allumé. Le groupe se sent plus fort.',
     npcMilo: 'Milo',
     npcKai: 'Kai',
     npcNoah: 'Noah',
-    useItem: 'Utiliser l’objet',
-    actionPick: 'Ramasser',
     eventWaterFound: 'Tu trouves une bouteille d’eau dans une fissure de roche.',
-    eventCampfire: 'Tu as assez de bois. Tu construis un feu de camp.',
+    eventCampfire: 'Tu as assez de bois. Le feu peut maintenant brûler.',
     winTitle: 'Vous avez fait un plan',
-    winText: 'Vous avez de l’eau, de la nourriture et un petit feu. L’île reste dangereuse, mais vous avez enfin commencé à survivre.',
+    winText: 'Vous avez de l’eau, de la nourriture, du bois et un feu. L’île reste dangereuse, mais il y a maintenant un début.',
     startButton: 'Démarrer'
   },
   zh: {
-    subtitle: '一个被困孤岛上的生存故事',
-    languageTitle: '语言 / Taal / Language / Langue / Idioma',
+    menuSubtitle: '一个被困孤岛上的生存故事',
     start: '开始',
     hunger: '饥饿',
     thirst: '口渴',
@@ -157,139 +128,100 @@ const translations = {
     energy: '体力',
     objectives: '目标',
     inventory: '物品',
-    objectiveGatherCoconuts: '收集2个椰子。',
-    objectiveWater: '找到一瓶水。',
-    objectiveWood: '收集3块木头。',
-    objectiveCampfire: '点燃篝火。',
-    objectiveTalk: '和其他人谈谈并制定计划。',
-    taskComplete: '完成',
-    introWake: '你猛地醒来。空气里有盐味、棕榈叶味和汗味。炎热压得人喘不过气。你在哪里？',
-    introLook: '你环顾四周。海滩、岩石、树木和安静的森林在你周围。岸边站着三个人影。',
-    interactItem: '按 E 拾取',
-    interactNpc: '按 E 交谈',
+    gatherCoconut: '收集2个椰子。',
+    findWater: '找到一瓶水。',
+    gatherWood: '收集3块木头。',
+    buildCampfire: '点燃篝火。',
+    talkPlan: '和其他人谈谈并制定计划。',
+    introWake: '你猛地醒来。阳光照在你的脸上。热气包围着你。你在哪里？',
+    introLook: '你看向四周。海滩边站着三个人。你看到沙滩、岩石、棕榈树和森林。你必须活下来。',
+    interactPickup: '按 E 拾取',
+    interactTalk: '按 E 交谈',
     noItem: '没有物品',
-    speakMilo: '米洛很紧张，总是看向树林。',
-    speakKai: '凯在站着，像什么都不怕。',
-    speakNoah: '诺亚冷静地观察四周，在说话前先思考。',
     planPrompt: '我们制定一个计划吧。',
-    campfireBuilt: '篝火燃烧起来。大家感觉更有力量了。',
+    campfireBuilt: '篝火已燃起。队伍感觉更安全了。',
     npcMilo: '米洛',
     npcKai: '凯',
     npcNoah: '诺亚',
-    useItem: '使用物品',
-    actionPick: '拾取',
-    eventWaterFound: '你在岩缝里发现了一瓶水。',
-    eventCampfire: '你已经有足够的木头了。你点燃了篝火。',
+    eventWaterFound: '你在岩石缝里找到了一瓶水。',
+    eventCampfire: '你已经有足够的木头了。篝火现在可以点燃。',
     winTitle: '你们已经制定了计划',
-    winText: '你们有水、有食物，还有一个小篝火。岛屿仍然危险，但你们终于开始活下去。',
+    winText: '你们有水、有食物、有木头和篝火。岛屿仍然危险，但现在已经有了起点。',
     startButton: '开始'
   }
 };
 
-const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
+const clamp = (v, min, max) => Math.min(Math.max(v, min), max);
 
 const game = {
-  worldWidth: 2200,
-  worldHeight: 1700,
-  camera: { x: 0, y: 0 },
   lang: 'nl',
   started: false,
-  lastTime: 0,
   gameWon: false,
-  message: '',
-  controls: {
-    up: false,
-    down: false,
-    left: false,
-    right: false,
-    action: false
-  },
-  player: {
-    x: 780,
-    y: 760,
-    radius: 18,
-    speed: 260,
-    facing: 0,
-    stepTimer: 0
-  },
+  world: { width: 2200, height: 1700 },
+  camera: { x: 0, y: 0 },
+  player: { x: 820, y: 880, radius: 16, speed: 250 },
+  controls: { up: false, down: false, left: false, right: false, action: false },
   npcs: [
-    { id: 'milo', name: 'Milo', x: 740, y: 640, color: '#efb197', memory: { plan: false, trust: false }, talking: false },
-    { id: 'kai', name: 'Kai', x: 880, y: 680, color: '#c4d98a', memory: { plan: false, trust: false }, talking: false },
-    { id: 'noah', name: 'Noah', x: 820, y: 820, color: '#91c5ff', memory: { plan: false, trust: false }, talking: false }
+    { id: 'milo', name: 'Milo', x: 710, y: 660, color: '#f3b19a' },
+    { id: 'kai', name: 'Kai', x: 920, y: 650, color: '#c9d66b' },
+    { id: 'noah', name: 'Noah', x: 820, y: 780, color: '#8ecae6' }
   ],
   items: [
-    { id: 'coconut1', type: 'coconut', x: 820, y: 540, visible: true },
-    { id: 'coconut2', type: 'coconut', x: 910, y: 910, visible: true },
-    { id: 'berry1', type: 'berry', x: 600, y: 840, visible: true },
-    { id: 'berry2', type: 'berry', x: 990, y: 1170, visible: true },
-    { id: 'water1', type: 'water', x: 1320, y: 660, visible: true },
-    { id: 'wood1', type: 'wood', x: 500, y: 1260, visible: true },
-    { id: 'wood2', type: 'wood', x: 660, y: 1080, visible: true },
-    { id: 'wood3', type: 'wood', x: 1180, y: 920, visible: true },
-    { id: 'wood4', type: 'wood', x: 1040, y: 1300, visible: true }
+    { id: 'coconut-1', type: 'coconut', x: 640, y: 520, visible: true },
+    { id: 'coconut-2', type: 'coconut', x: 1010, y: 970, visible: true },
+    { id: 'berry-1', type: 'berry', x: 560, y: 1060, visible: true },
+    { id: 'water-1', type: 'water', x: 1200, y: 690, visible: true },
+    { id: 'wood-1', type: 'wood', x: 510, y: 1260, visible: true },
+    { id: 'wood-2', type: 'wood', x: 680, y: 1150, visible: true },
+    { id: 'wood-3', type: 'wood', x: 1070, y: 1280, visible: true }
   ],
   inventory: [],
-  stats: { hunger: 86, thirst: 84, health: 100, energy: 82 },
-  campfire: { x: 700, y: 1040, built: false },
-  questState: {
-    coconuts: 0,
-    water: 0,
-    wood: 0,
-    campfire: false,
-    talked: 0,
-    planMade: false
-  },
+  stats: { hunger: 82, thirst: 80, health: 100, energy: 85 },
+  campfire: { x: 760, y: 1030, built: false },
+  questState: { coconuts: 0, water: 0, wood: 0, campfire: false, planMade: false, talkCount: 0 },
   currentDialog: null,
-  selectedLanguage: 'nl',
-  systemMessage: '',
-  lastActionAt: 0
+  selectedLang: 'nl',
+  message: '',
+  interactionText: '',
+  activeNpc: null,
+  activeItem: null,
+  lastTime: 0
 };
 
 const canvas = document.getElementById('gameCanvas');
 const ctx = canvas.getContext('2d');
-const hud = document.getElementById('hud');
 const menuOverlay = document.getElementById('menuOverlay');
-const objectivesList = document.getElementById('questList');
+const hud = document.getElementById('hud');
+const startBtn = document.getElementById('startBtn');
+const questList = document.getElementById('questList');
 const inventoryList = document.getElementById('inventoryList');
-const interactionBubble = document.getElementById('interactionBubble');
+const interactBubble = document.getElementById('interactBubble');
 const dialogBox = document.getElementById('dialogBox');
 const dialogName = document.getElementById('dialogName');
 const dialogText = document.getElementById('dialogText');
 const dialogOptions = document.getElementById('dialogOptions');
-const startButton = document.getElementById('startButton');
-const touchControls = document.getElementById('touchControls');
-const touchActionBtn = document.getElementById('touchAction');
 const closeDialogBtn = document.getElementById('closeDialog');
+const touchControls = document.getElementById('touchControls');
+const touchAction = document.getElementById('touchAction');
 
-const text = (key) => translations[game.lang]?.[key] ?? key;
+const t = (key) => translations[game.lang]?.[key] ?? key;
 
-function initLanguageButtons() {
-  document.querySelectorAll('.lang-btn').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('.lang-btn').forEach((b) => b.classList.remove('selected'));
-      btn.classList.add('selected');
-      game.selectedLanguage = btn.dataset.lang;
-      startButton.textContent = translations[game.selectedLanguage]?.startButton || 'Start';
-    });
+function setSelectedLanguage(lang) {
+  game.selectedLang = lang;
+  document.querySelectorAll('.langBtn').forEach((b) => {
+    b.classList.toggle('selected', b.dataset.lang === lang);
   });
-
-  const initialLang = 'nl';
-  const initButton = document.querySelector(`.lang-btn[data-lang="${initialLang}"]`);
-  if (initButton) initButton.classList.add('selected');
-  game.selectedLanguage = initialLang;
-  startButton.textContent = translations[initialLang].startButton;
+  startBtn.textContent = translations[lang]?.startButton || 'Start';
 }
 
 function startGame() {
-  game.lang = game.selectedLanguage;
+  game.lang = game.selectedLang;
   game.started = true;
   menuOverlay.classList.remove('visible');
   hud.classList.remove('hidden');
   touchControls.classList.remove('hidden');
-  game.systemMessage = text('introWake');
-  setTimeout(() => {
-    game.systemMessage = text('introLook');
-  }, 2600);
+  game.message = t('introWake');
+  setTimeout(() => { game.message = t('introLook'); }, 2500);
   refreshHud();
 }
 
@@ -298,6 +230,13 @@ function refreshHud() {
   const thirst = clamp(Math.round(game.stats.thirst), 0, 100);
   const health = clamp(Math.round(game.stats.health), 0, 100);
   const energy = clamp(Math.round(game.stats.energy), 0, 100);
+
+  document.getElementById('hungerLabel').textContent = t('hunger');
+  document.getElementById('thirstLabel').textContent = t('thirst');
+  document.getElementById('healthLabel').textContent = t('health');
+  document.getElementById('energyLabel').textContent = t('energy');
+  document.getElementById('objectiveTitle').textContent = t('objectives');
+  document.getElementById('inventoryTitle').textContent = t('inventory');
 
   document.getElementById('hungerBar').style.width = `${hunger}%`;
   document.getElementById('thirstBar').style.width = `${thirst}%`;
@@ -309,164 +248,40 @@ function refreshHud() {
   document.getElementById('healthValue').textContent = health;
   document.getElementById('energyValue').textContent = energy;
 
-  document.getElementById('hungerLabel').textContent = text('hunger');
-  document.getElementById('thirstLabel').textContent = text('thirst');
-  document.getElementById('healthLabel').textContent = text('health');
-  document.getElementById('energyLabel').textContent = text('energy');
-
   const objectives = [
-    { id: 'coconuts', done: game.questState.coconuts >= 2, label: text('objectiveGatherCoconuts') },
-    { id: 'water', done: game.questState.water >= 1, label: text('objectiveWater') },
-    { id: 'wood', done: game.questState.wood >= 3, label: text('objectiveWood') },
-    { id: 'campfire', done: game.questState.campfire, label: text('objectiveCampfire') },
-    { id: 'talk', done: game.questState.planMade, label: text('objectiveTalk') }
+    { label: t('gatherCoconut'), done: game.questState.coconuts >= 2 },
+    { label: t('findWater'), done: game.questState.water >= 1 },
+    { label: t('gatherWood'), done: game.questState.wood >= 3 },
+    { label: t('buildCampfire'), done: game.questState.campfire },
+    { label: t('talkPlan'), done: game.questState.planMade }
   ];
-  objectivesList.innerHTML = objectives.map((o) => `<li class="${o.done ? 'complete' : ''}">${o.label}</li>`).join('');
+  questList.innerHTML = objectives.map((o) => `<li class="${o.done ? 'done' : ''}">${o.label}</li>`).join('');
 
-  const inventoryEntries = [...game.inventory];
-  if (inventoryEntries.length === 0) {
-    inventoryList.innerHTML = `<button class="inventory-item empty" disabled>${text('noItem')}</button>`;
-    return;
-  }
+  inventoryList.innerHTML = game.inventory.length
+    ? game.inventory.map((item) => `<button class="invItem" data-item="${item}">${item}</button>`).join('')
+    : `<div class="emptyInv">${t('noItem')}</div>`;
 
-  inventoryList.innerHTML = inventoryEntries.map((item) => `
-    <button class="inventory-item" data-item="${item}">${item}</button>
-  `).join('');
-
-  inventoryList.querySelectorAll('.inventory-item').forEach((button) => {
-    button.addEventListener('click', () => useInventoryItem(button.dataset.item));
+  document.querySelectorAll('.invItem').forEach((itemBtn) => {
+    itemBtn.addEventListener('click', () => useInventoryItem(itemBtn.dataset.item));
   });
 }
 
 function useInventoryItem(itemName) {
   if (!game.started || game.gameWon) return;
-  const itemKey = itemName.toLowerCase();
 
-  if (itemKey.includes('coconut') || itemKey.includes('berry')) {
-    game.stats.hunger = clamp(game.stats.hunger + 18, 0, 100);
-    game.stats.energy = clamp(game.stats.energy + 6, 0, 100);
+  const key = itemName.toLowerCase();
+  if (key.includes('coconut') || key.includes('berry')) {
+    game.stats.hunger = clamp(game.stats.hunger + 16, 0, 100);
+    game.stats.energy = clamp(game.stats.energy + 8, 0, 100);
   }
-
-  if (itemKey.includes('water')) {
-    game.stats.thirst = clamp(game.stats.thirst + 24, 0, 100);
-    game.stats.health = clamp(game.stats.health + 6, 0, 100);
-  }
-
-  if (itemKey.includes('wood')) {
-    if (distanceToCampfire() < 70) {
-      game.questState.wood = clamp(game.questState.wood + 1, 0, 99);
-      game.systemMessage = text('eventCampfire');
-      if (game.questState.wood >= 3 && !game.questState.campfire) {
-        game.questState.campfire = true;
-        game.campfire.built = true;
-        game.systemMessage = text('campfireBuilt');
-      }
-    } else {
-      game.systemMessage = 'Wood is best used near the campfire.';
-    }
+  if (key.includes('water')) {
+    game.stats.thirst = clamp(game.stats.thirst + 22, 0, 100);
+    game.stats.health = clamp(game.stats.health + 8, 0, 100);
   }
 
   const index = game.inventory.indexOf(itemName);
   if (index !== -1) game.inventory.splice(index, 1);
-  if (game.questState.campfire) {
-    game.questState.planMade = true;
-  }
   refreshHud();
-}
-
-function distanceToCampfire() {
-  return Math.hypot(game.player.x - game.campfire.x, game.player.y - game.campfire.y);
-}
-
-function createDialog(npcId) {
-  const npc = game.npcs.find((entry) => entry.id === npcId);
-  if (!npc) return;
-
-  const moods = {
-    milo: [
-      'Milo: "Ik ben bang. Ik weet niet zeker of dit eiland veilig is."',
-      'Milo: "We moeten voorzichtig zijn. Ik kan niet stil blijven zitten."',
-      'Milo: "Ik wil niet dat we te snel de jungle in gaan."'
-    ],
-    kai: [
-      'Kai: "We gaan eerst kijken, zien wat hier zit en dan handelen."',
-      'Kai: "Ik ben niet bang. Ik kan dit eiland wel aan."',
-      'Kai: "Als we hier willen overleven, moeten we samen proberen."'
-    ],
-    noah: [
-      'Noah: "We hebben voedsel, water en een plek nodig. Een plan is het eerste waarmee we beginnen."',
-      'Noah: "Als we snel iets bouwen, kunnen we rustiger nadenken."',
-      'Noah: "Dit eiland is groot. We moeten kijken, noteren en niet blind vertrouwen."'
-    ]
-  };
-
-  const lines = moods[npcId] || ['No dialogue available.'];
-  const options = [
-    { label: '"Laten we een plan maken."', next: 'plan' },
-    { label: '"Wat moeten we eerst doen?"', next: 'priorities' },
-    { label: '"Wat voel jij?"', next: 'feel' }
-  ];
-
-  game.currentDialog = {
-    npcId,
-    lines,
-    options
-  };
-
-  dialogName.textContent = npc.name;
-  dialogText.innerHTML = lines.join('<br><br>');
-  dialogOptions.innerHTML = '';
-
-  options.forEach((option) => {
-    const btn = document.createElement('button');
-    btn.className = 'dialog-option';
-    btn.textContent = option.label;
-    btn.addEventListener('click', () => chooseDialogueOption(option.next, npcId));
-    dialogOptions.appendChild(btn);
-  });
-
-  dialogBox.classList.remove('hidden');
-}
-
-function chooseDialogueOption(choice, npcId) {
-  const npc = game.npcs.find((entry) => entry.id === npcId);
-  if (!npc) return;
-
-  npc.memory.plan = true;
-  game.questState.talked += 1;
-
-  if (choice === 'plan') {
-    game.questState.planMade = true;
-    game.systemMessage = 'The group starts to stand together and make a plan.';
-    const responseText = `"${npc.name}: We gaan als groep werken. Eerst water, dan onderdak, dan veiligheid."`;
-    dialogText.innerHTML = responseText;
-    dialogOptions.innerHTML = '<button class="dialog-option">"We houden contact en blijven alert."</button>';
-    dialogOptions.querySelector('button').addEventListener('click', () => {
-      dialogBox.classList.add('hidden');
-      game.currentDialog = null;
-      refreshHud();
-    });
-    return;
-  }
-
-  if (choice === 'priorities') {
-    dialogText.innerHTML = `"${npc.name}: Eerst water, iets om te eten, dan een kampvuur. Daarna kijken we hoe we het eiland kunnen controleren."`;
-    dialogOptions.innerHTML = '<button class="dialog-option">"Dat klinkt logisch."</button>';
-    dialogOptions.querySelector('button').addEventListener('click', () => {
-      dialogBox.classList.add('hidden');
-      game.currentDialog = null;
-    });
-    return;
-  }
-
-  if (choice === 'feel') {
-    dialogText.innerHTML = `"${npc.name}: Ik voel me wankel, maar ik wil niet alleen zijn. Als we samen blijven, kunnen we het redden."`;
-    dialogOptions.innerHTML = '<button class="dialog-option">"We blijven bij elkaar."</button>';
-    dialogOptions.querySelector('button').addEventListener('click', () => {
-      dialogBox.classList.add('hidden');
-      game.currentDialog = null;
-    });
-  }
 }
 
 function nearNpc() {
@@ -480,18 +295,34 @@ function nearNpc() {
 function nearItem() {
   for (const item of game.items) {
     if (!item.visible) continue;
-    const dist = Math.hypot(game.player.x - item.x, game.player.y - item.y);
-    if (dist < 42) return item;
+    const d = Math.hypot(game.player.x - item.x, game.player.y - item.y);
+    if (d < 42) return item;
   }
   return null;
 }
 
-function performAction() {
+function setInteractBubble() {
+  const item = nearItem();
+  const npc = nearNpc();
+  if (item) {
+    interactBubble.textContent = `${t('interactPickup')}: ${item.type}`;
+    interactBubble.classList.remove('hidden');
+    return;
+  }
+  if (npc) {
+    interactBubble.textContent = `${t('interactTalk')}: ${npc.name}`;
+    interactBubble.classList.remove('hidden');
+    return;
+  }
+  interactBubble.classList.add('hidden');
+}
+
+function doAction() {
   if (!game.started || game.gameWon) return;
 
   const npc = nearNpc();
   if (npc) {
-    createDialog(npc.id);
+    openDialog(npc.id);
     return;
   }
 
@@ -499,107 +330,163 @@ function performAction() {
   if (!item) return;
 
   if (item.type === 'coconut') {
-    if (game.questState.coconuts < 2) {
-      game.questState.coconuts += 1;
-    }
+    game.questState.coconuts += 1;
     game.inventory.push('Coconut');
   }
-
   if (item.type === 'berry') {
     game.inventory.push('Berry');
   }
-
   if (item.type === 'water') {
     game.questState.water = 1;
     game.inventory.push('Water Bottle');
-    game.systemMessage = text('eventWaterFound');
+    game.message = t('eventWaterFound');
   }
-
   if (item.type === 'wood') {
+    game.questState.wood += 1;
     game.inventory.push('Wood');
-    game.questState.wood = clamp(game.questState.wood + 1, 0, 99);
   }
 
   item.visible = false;
+  if (game.questState.wood >= 3 && !game.questState.campfire) {
+    game.questState.campfire = true;
+    game.campfire.built = true;
+    game.message = t('eventCampfire');
+  }
   refreshHud();
 }
 
-function updateStats(dt) {
-  game.stats.hunger = clamp(game.stats.hunger - dt * 0.55, 0, 100);
-  game.stats.thirst = clamp(game.stats.thirst - dt * 0.8, 0, 100);
-  game.stats.energy = clamp(game.stats.energy - dt * 0.24, 0, 100);
+function openDialog(npcId) {
+  const npc = game.npcs.find((n) => n.id === npcId);
+  if (!npc) return;
 
-  if (game.stats.hunger < 30 || game.stats.thirst < 25) {
-    game.stats.health = clamp(game.stats.health - dt * 0.45, 0, 100);
+  const npcKey = npcId.toLowerCase();
+  const lines = {
+    milo: [
+      'Milo: "Ik ben bang. Ik kijk altijd naar de bossen. Er is iets in de stilte..."',
+      'Milo: "We moeten voorzichtig zijn. Ik wil niet dat we blind ergens inrennen."',
+      'Milo: "Ik wil alleen niet dat we zonder plan hier stranden."'
+    ],
+    kai: [
+      'Kai: "Ik ben niet bang. We moeten kijken, grijpen en handelen."',
+      'Kai: "Dit eiland is groot, maar ik kan hier goed tegen. We moeten niet twijfelen."',
+      'Kai: "Als we willen overleven, moeten we samen staan. Dat is alles."'
+    ],
+    noah: [
+      'Noah: "We hebben voedsel, water, een plek om te rusten en een plan nodig. Dat is de volgorde."',
+      'Noah: "Niet panikeren. Eerst kijken, daarna handelen."',
+      'Noah: "Als we de omgeving controleren, kunnen we onze kansen vergroten."'
+    ]
+  };
+
+  game.currentDialog = { npcId, lines: lines[npcKey] || ['...'] };
+  dialogName.textContent = npc.name;
+  dialogText.innerHTML = lines[npcKey].join('<br><br>');
+  dialogOptions.innerHTML = '';
+
+  const options = [
+    { text: '"Laten we een plan maken."', action: 'plan' },
+    { text: '"Wat moet ons eerste doel zijn?"', action: 'goal' },
+    { text: '"Hoe voel jij je?"', action: 'feel' }
+  ];
+
+  options.forEach((opt) => {
+    const btn = document.createElement('button');
+    btn.className = 'dialogBtn';
+    btn.textContent = opt.text;
+    btn.addEventListener('click', () => answerDialog(opt.action, npcId));
+    dialogOptions.appendChild(btn);
+  });
+
+  dialogBox.classList.remove('hidden');
+}
+
+function answerDialog(action, npcId) {
+  const npc = game.npcs.find((n) => n.id === npcId);
+  if (!npc) return;
+
+  if (action === 'plan') {
+    game.questState.planMade = true;
+    game.message = t('planPrompt');
+    dialogText.innerHTML = `"${npc.name}: Ja. Eerst water, dan eten, daarna een kampvuur. We kunnen dit alleen samen."`;
+    dialogOptions.innerHTML = '<button class="dialogBtn">"We blijven bij elkaar."</button>';
+    dialogOptions.querySelector('.dialogBtn').addEventListener('click', () => {
+      dialogBox.classList.add('hidden');
+      game.currentDialog = null;
+      refreshHud();
+    });
+    return;
   }
 
-  if (game.stats.energy < 20) {
-    game.stats.health = clamp(game.stats.health - dt * 0.2, 0, 100);
+  if (action === 'goal') {
+    dialogText.innerHTML = `"${npc.name}: Water eerst. Dan eten. Daarna bouwen we een kampvuur en inspecteren we de omgeving."`;
+    dialogOptions.innerHTML = '<button class="dialogBtn">"Dat klinkt logisch."</button>';
+    dialogOptions.querySelector('.dialogBtn').addEventListener('click', () => {
+      dialogBox.classList.add('hidden');
+      game.currentDialog = null;
+    });
+    return;
+  }
+
+  dialogText.innerHTML = `"${npc.name}: Ik voel me bang, maar ik blijf bij de groep. We moeten niet alleen zijn."`;
+  dialogOptions.innerHTML = '<button class="dialogBtn">"We maken samen een plan."</button>';
+  dialogOptions.querySelector('.dialogBtn').addEventListener('click', () => {
+    dialogBox.classList.add('hidden');
+    game.currentDialog = null;
+  });
+}
+
+function closeDialog() {
+  dialogBox.classList.add('hidden');
+  game.currentDialog = null;
+}
+
+function updateStats(dt) {
+  game.stats.hunger = clamp(game.stats.hunger - dt * 0.6, 0, 100);
+  game.stats.thirst = clamp(game.stats.thirst - dt * 0.85, 0, 100);
+  game.stats.energy = clamp(game.stats.energy - dt * 0.2, 0, 100);
+
+  if (game.stats.hunger < 30 || game.stats.thirst < 25) {
+    game.stats.health = clamp(game.stats.health - dt * 0.35, 0, 100);
   }
 
   if (game.stats.health <= 0) {
-    game.systemMessage = 'Your strength fades. Find food and water before it is too late.';
+    game.message = 'Je bent uitgeput. Zoek eten en water.';
   }
-}
-
-function updateCamera() {
-  const targetX = clamp(game.player.x - canvas.width * 0.5, 0, game.worldWidth - canvas.width);
-  const targetY = clamp(game.player.y - canvas.height * 0.5, 0, game.worldHeight - canvas.height);
-  game.camera.x = targetX;
-  game.camera.y = targetY;
 }
 
 function updateMovement(dt) {
-  let moveX = 0;
-  let moveY = 0;
+  let dx = 0;
+  let dy = 0;
 
-  if (game.controls.left) moveX -= 1;
-  if (game.controls.right) moveX += 1;
-  if (game.controls.up) moveY -= 1;
-  if (game.controls.down) moveY += 1;
+  if (game.controls.left) dx -= 1;
+  if (game.controls.right) dx += 1;
+  if (game.controls.up) dy -= 1;
+  if (game.controls.down) dy += 1;
 
-  const len = Math.hypot(moveX, moveY) || 1;
-  moveX /= len;
-  moveY /= len;
-
-  const speed = game.player.speed * dt;
-  game.player.x += moveX * speed;
-  game.player.y += moveY * speed;
-
-  game.player.x = clamp(game.player.x, 60, game.worldWidth - 60);
-  game.player.y = clamp(game.player.y, 60, game.worldHeight - 60);
-
-  if (moveX !== 0 || moveY !== 0) {
-    game.player.facing = Math.atan2(moveY, moveX);
-    game.player.stepTimer += dt * 9;
+  if (dx !== 0 || dy !== 0) {
+    const len = Math.hypot(dx, dy) || 1;
+    dx /= len; dy /= len;
+    const speed = game.player.speed * dt;
+    game.player.x += dx * speed;
+    game.player.y += dy * speed;
   }
 
-  updateCamera();
-}
+  game.player.x = clamp(game.player.x, 50, game.world.width - 50);
+  game.player.y = clamp(game.player.y, 50, game.world.height - 50);
 
-function updateInteractions() {
-  const item = nearItem();
-  const npc = nearNpc();
-
-  if (item) {
-    interactionBubble.textContent = `${text('interactItem')}: ${item.type}`;
-    interactionBubble.classList.remove('hidden');
-  } else if (npc) {
-    interactionBubble.textContent = text('interactNpc') + ': ' + npc.name;
-    interactionBubble.classList.remove('hidden');
-  } else {
-    interactionBubble.classList.add('hidden');
-  }
+  const cameraX = clamp(game.player.x - canvas.width / 2, 0, game.world.width - canvas.width);
+  const cameraY = clamp(game.player.y - canvas.height / 2, 0, game.world.height - canvas.height);
+  game.camera.x = cameraX;
+  game.camera.y = cameraY;
 }
 
 function updateGame(dt) {
   if (!game.started) return;
-
   updateMovement(dt);
   updateStats(dt);
-  updateInteractions();
+  setInteractBubble();
 
-  if (game.questState.campfire && game.questState.planMade) {
+  if (game.questState.planMade && game.questState.campfire) {
     game.gameWon = true;
   }
 
@@ -611,87 +498,67 @@ function updateGame(dt) {
 }
 
 function showWinDialog() {
-  if (dialogBox.classList.contains('hidden')) {
-    dialogName.textContent = 'Plan';
-    dialogText.innerHTML = `<strong>${text('winTitle')}</strong><br><br>${text('winText')}`;
-    dialogOptions.innerHTML = '<button class="dialog-option">OK</button>';
-    dialogOptions.querySelector('button').addEventListener('click', () => {
-      dialogBox.classList.add('hidden');
-    });
-    dialogBox.classList.remove('hidden');
-  }
+  if (!dialogBox.classList.contains('hidden')) return;
+  dialogName.textContent = 'Plan';
+  dialogText.innerHTML = `<strong>${t('winTitle')}</strong><br><br>${t('winText')}`;
+  dialogOptions.innerHTML = '<button class="dialogBtn">OK</button>';
+  dialogOptions.querySelector('.dialogBtn').addEventListener('click', () => dialogBox.classList.add('hidden'));
+  dialogBox.classList.remove('hidden');
 }
 
 function drawBackground() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-  ctx.fillStyle = '#55c8ff';
+  // sky
+  const sky = ctx.createLinearGradient(0, 0, 0, canvas.height);
+  sky.addColorStop(0, '#73d5ff');
+  sky.addColorStop(0.6, '#66b5ea');
+  sky.addColorStop(1, '#3d8f5d');
+  ctx.fillStyle = sky;
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-  const bgW = canvas.width;
-  const bgH = canvas.height;
-  const startX = -game.camera.x;
-  const startY = -game.camera.y;
+  // water
+  ctx.fillStyle = '#5ec5ff';
+  ctx.fillRect(0, canvas.height * 0.56, canvas.width, canvas.height * 0.44);
 
-  ctx.fillStyle = '#2f9be8';
-  ctx.fillRect(0, 0, bgW, bgH);
+  // beach + island shape
+  const ox = -game.camera.x;
+  const oy = -game.camera.y;
 
-  ctx.fillStyle = '#6fd7ff';
-  const waveY = bgH * 0.55;
-  ctx.fillRect(0, waveY, bgW, bgH - waveY);
-
-  for (let i = 0; i < 16; i++) {
-    ctx.beginPath();
-    ctx.arc((i * 180) - (game.camera.x * 0.28) % 200, 120 + (i % 3) * 30, 35, 0, Math.PI * 2);
-    ctx.fillStyle = 'rgba(255,255,255,0.18)';
-    ctx.fill();
-  }
-
-  const islandCenterX = 780 - game.camera.x;
-  const islandCenterY = 760 - game.camera.y;
-
-  ctx.fillStyle = '#d9c57d';
+  ctx.fillStyle = '#efd18f';
   ctx.beginPath();
-  ctx.ellipse(islandCenterX, islandCenterY + 140, 540, 380, 0, 0, Math.PI * 2);
+  ctx.ellipse(820 + ox, 980 + oy, 620, 350, 0, 0, Math.PI * 2);
   ctx.fill();
 
-  ctx.fillStyle = '#f2eac3';
+  ctx.fillStyle = '#f4ebc9';
   ctx.beginPath();
-  ctx.ellipse(islandCenterX + 40, islandCenterY + 140, 420, 280, 0.1, 0, Math.PI * 2);
+  ctx.ellipse(850 + ox, 980 + oy, 440, 250, 0, 0, Math.PI * 2);
   ctx.fill();
 
-  ctx.fillStyle = '#8ec26d';
+  // jungle
+  ctx.fillStyle = '#3c8f56';
   ctx.beginPath();
-  ctx.moveTo(islandCenterX - 500, islandCenterY + 100);
-  ctx.quadraticCurveTo(islandCenterX - 260, islandCenterY - 260, islandCenterX - 60, islandCenterY + 30);
-  ctx.quadraticCurveTo(islandCenterX + 140, islandCenterY - 300, islandCenterX + 420, islandCenterY + 40);
-  ctx.quadraticCurveTo(islandCenterX + 520, islandCenterY + 160, islandCenterX + 380, islandCenterY + 220);
-  ctx.quadraticCurveTo(islandCenterX + 80, islandCenterY + 260, islandCenterX - 500, islandCenterY + 100);
+  ctx.moveTo(200 + ox, 980 + oy);
+  ctx.quadraticCurveTo(400 + ox, 700 + oy, 700 + ox, 930 + oy);
+  ctx.quadraticCurveTo(1100 + ox, 700 + oy, 1400 + ox, 960 + oy);
+  ctx.quadraticCurveTo(1600 + ox, 1040 + oy, 1700 + ox, 1000 + oy);
+  ctx.quadraticCurveTo(1450 + ox, 1220 + oy, 200 + ox, 980 + oy);
   ctx.fill();
 
-  ctx.fillStyle = '#5da45a';
-  ctx.beginPath();
-  ctx.moveTo(islandCenterX - 420, islandCenterY + 160);
-  ctx.quadraticCurveTo(islandCenterX - 250, islandCenterY + 40, islandCenterX - 120, islandCenterY + 150);
-  ctx.quadraticCurveTo(islandCenterX - 40, islandCenterY + 50, islandCenterX + 180, islandCenterY + 150);
-  ctx.quadraticCurveTo(islandCenterX + 300, islandCenterY + 60, islandCenterX + 410, islandCenterY + 170);
-  ctx.quadraticCurveTo(islandCenterX + 300, islandCenterY + 260, islandCenterX - 420, islandCenterY + 160);
-  ctx.fill();
-
-  ctx.fillStyle = '#b8d67a';
+  // palms
   for (let i = 0; i < 18; i++) {
-    const px = islandCenterX - 470 + i * 52;
-    const py = islandCenterY + 120 + ((i % 3) * 12);
-    const treeHeight = 42 + (i % 5) * 11;
-    drawPalmTree(px, py, treeHeight, 0.8 + (i % 3) * 0.12);
+    const px = 240 + i * 70 + ox;
+    const py = 760 + (i % 4) * 30 + oy;
+    drawPalm(px, py, 80 + (i % 3) * 12, 0.9 + (i % 3) * 0.11);
   }
 
+  // rocks
   for (let i = 0; i < 9; i++) {
-    const rx = islandCenterX - 360 + i * 140;
-    const ry = islandCenterY + 140 + (i % 2) * 50;
-    ctx.fillStyle = '#7a7770';
+    const rx = 400 + i * 140 + ox;
+    const ry = 1120 + (i % 2) * 50 + oy;
+    ctx.fillStyle = '#76706c';
     ctx.beginPath();
-    ctx.arc(rx, ry, 20 + (i % 3) * 8, 0, Math.PI * 2);
+    ctx.arc(rx, ry, 18 + (i % 3) * 8, 0, Math.PI * 2);
     ctx.fill();
   }
 
@@ -699,29 +566,28 @@ function drawBackground() {
   drawItems();
   drawNpcs();
   drawPlayer();
-
-  drawSystemMessage();
+  drawMessage();
 }
 
-function drawPalmTree(x, y, height, scale) {
+function drawPalm(x, y, height, scale) {
   ctx.save();
   ctx.translate(x, y);
   ctx.scale(scale, scale);
-  ctx.strokeStyle = '#7a562a';
-  ctx.lineWidth = 5;
+  ctx.strokeStyle = '#7b552c';
+  ctx.lineWidth = 4;
   ctx.beginPath();
   ctx.moveTo(0, 0);
   ctx.lineTo(0, -height);
   ctx.stroke();
 
-  ctx.fillStyle = '#7fd777';
+  ctx.fillStyle = '#68d56d';
   for (let i = 0; i < 6; i++) {
     ctx.save();
-    ctx.rotate((Math.PI / 3) * i + Math.PI / 12);
+    ctx.rotate((Math.PI / 3) * i + 0.2);
     ctx.beginPath();
     ctx.moveTo(0, -height + 10);
-    ctx.quadraticCurveTo(26, -height + 30, 0, -height + 80);
-    ctx.quadraticCurveTo(-18, -height + 25, 0, -height + 10);
+    ctx.quadraticCurveTo(20, -height + 30, 0, -height + 80);
+    ctx.quadraticCurveTo(-18, -height + 28, 0, -height + 10);
     ctx.fill();
     ctx.restore();
   }
@@ -731,21 +597,18 @@ function drawPalmTree(x, y, height, scale) {
 function drawCampfire() {
   const x = game.campfire.x - game.camera.x;
   const y = game.campfire.y - game.camera.y;
-
   if (!game.campfire.built) {
-    ctx.fillStyle = '#a76a38';
+    ctx.fillStyle = '#aa6b35';
     ctx.beginPath();
     ctx.arc(x, y, 18, 0, Math.PI * 2);
     ctx.fill();
     return;
   }
-
-  ctx.fillStyle = '#f7a633';
+  ctx.fillStyle = '#f3a933';
   ctx.beginPath();
   ctx.arc(x, y, 18, 0, Math.PI * 2);
   ctx.fill();
-
-  ctx.fillStyle = '#ffdf8f';
+  ctx.fillStyle = '#ffe7a7';
   ctx.beginPath();
   ctx.arc(x, y - 10, 10, 0, Math.PI * 2);
   ctx.fill();
@@ -758,192 +621,135 @@ function drawItems() {
     const y = item.y - game.camera.y;
 
     if (item.type === 'coconut') {
-      ctx.fillStyle = '#a86a3a';
-      ctx.beginPath();
-      ctx.arc(x, y, 12, 0, Math.PI * 2);
-      ctx.fill();
-      ctx.fillStyle = '#7a5a2f';
-      ctx.fillRect(x - 3, y + 8, 6, 10);
+      ctx.fillStyle = '#a96a3d';
+      ctx.beginPath(); ctx.arc(x, y, 12, 0, Math.PI * 2); ctx.fill();
+      ctx.fillStyle = '#7a5a32';
+      ctx.fillRect(x - 2, y + 8, 4, 12);
     }
-
     if (item.type === 'berry') {
-      ctx.fillStyle = '#f06c6c';
-      ctx.beginPath();
-      ctx.arc(x, y, 8, 0, Math.PI * 2);
-      ctx.fill();
-      ctx.fillStyle = '#8ee75c';
-      ctx.beginPath();
-      ctx.arc(x - 6, y - 5, 5, 0, Math.PI * 2);
-      ctx.fill();
+      ctx.fillStyle = '#ef6e74';
+      ctx.beginPath(); ctx.arc(x, y, 8, 0, Math.PI * 2); ctx.fill();
+      ctx.fillStyle = '#84d75b';
+      ctx.beginPath(); ctx.arc(x - 6, y - 5, 5, 0, Math.PI * 2); ctx.fill();
     }
-
     if (item.type === 'water') {
-      ctx.fillStyle = '#5ec5ff';
-      ctx.fillRect(x - 8, y - 12, 16, 24);
-      ctx.fillStyle = '#d5f4ff';
-      ctx.fillRect(x - 5, y - 6, 10, 12);
+      ctx.fillStyle = '#63d2ff';
+      ctx.fillRect(x - 8, y - 12, 16, 22);
+      ctx.fillStyle = '#dcf7ff';
+      ctx.fillRect(x - 5, y - 6, 10, 11);
     }
-
     if (item.type === 'wood') {
-      ctx.fillStyle = '#b57a3d';
-      ctx.fillRect(x - 10, y - 5, 20, 10);
-      ctx.fillStyle = '#8f6637';
-      ctx.fillRect(x - 3, y - 14, 6, 9);
+      ctx.fillStyle = '#b17b42';
+      ctx.fillRect(x - 10, y - 5, 20, 8);
+      ctx.fillStyle = '#89592a';
+      ctx.fillRect(x - 3, y - 12, 6, 8);
     }
   }
 }
 
+function drawCharacter(x, y, color) {
+  ctx.save();
+  ctx.translate(x, y);
+
+  ctx.fillStyle = '#292421';
+  ctx.beginPath(); ctx.ellipse(0, 18, 10, 5, 0, 0, Math.PI * 2); ctx.fill();
+
+  ctx.fillStyle = color;
+  ctx.beginPath(); ctx.arc(0, -4, 12, 0, Math.PI * 2); ctx.fill();
+
+  ctx.fillStyle = '#2d2624';
+  ctx.fillRect(-6, 8, 5, 15);
+  ctx.fillRect(1, 8, 5, 15);
+  ctx.fillRect(-11, 22, 6, 16);
+  ctx.fillRect(5, 22, 6, 16);
+
+  ctx.restore();
+}
+
 function drawNpcs() {
-  for (const npc of game.npcs) {
+  game.npcs.forEach((npc) => {
     const x = npc.x - game.camera.x;
     const y = npc.y - game.camera.y;
-
-    drawCharacter(x, y, npc.color, npc.name, 0.95);
-
-    ctx.fillStyle = '#ecfbff';
+    drawCharacter(x, y, npc.color);
+    ctx.fillStyle = '#edf9ff';
     ctx.font = '12px sans-serif';
-    ctx.fillText(npc.name, x - 18, y - 26);
-  }
+    ctx.fillText(npc.name, x - 18, y - 25);
+  });
 }
 
 function drawPlayer() {
   const x = game.player.x - game.camera.x;
   const y = game.player.y - game.camera.y;
-  drawCharacter(x, y, '#f2d0b3', 'You', 1.05);
+  drawCharacter(x, y, '#f0caa5');
+  ctx.fillStyle = '#f0f7ff';
+  ctx.fillText('You', x - 14, y - 25);
 }
 
-function drawCharacter(x, y, color, label, scale) {
-  ctx.save();
-  ctx.translate(x, y);
-  ctx.scale(scale, scale);
-
-  ctx.fillStyle = '#2d2a34';
-  ctx.beginPath();
-  ctx.ellipse(0, 18, 10, 5, 0, 0, Math.PI * 2);
-  ctx.fill();
-
-  ctx.fillStyle = color;
-  ctx.beginPath();
-  ctx.arc(0, -4, 12, 0, Math.PI * 2);
-  ctx.fill();
-
-  ctx.fillStyle = '#2d2a34';
-  ctx.fillRect(-7, 8, 5, 14);
-  ctx.fillRect(2, 8, 5, 14);
-
-  ctx.fillStyle = '#1d2a2c';
-  ctx.fillRect(-12, 20, 7, 18);
-  ctx.fillRect(5, 20, 7, 18);
-
-  ctx.restore();
-}
-
-function drawSystemMessage() {
-  if (!game.systemMessage) return;
-  ctx.fillStyle = 'rgba(9, 22, 26, 0.72)';
-  ctx.fillRect(canvas.width / 2 - 220, 20, 440, 45);
-  ctx.strokeStyle = 'rgba(150,230,210,0.5)';
-  ctx.strokeRect(canvas.width / 2 - 220, 20, 440, 45);
-  ctx.fillStyle = '#f2feff';
-  ctx.font = '16px Segoe UI';
+function drawMessage() {
+  if (!game.message) return;
+  ctx.fillStyle = 'rgba(7,20,23,0.68)';
+  ctx.fillRect(canvas.width / 2 - 220, 20, 440, 38);
+  ctx.strokeStyle = 'rgba(170,245,220,0.6)';
+  ctx.strokeRect(canvas.width / 2 - 220, 20, 440, 38);
+  ctx.fillStyle = '#eefeff';
+  ctx.font = '15px sans-serif';
   ctx.textAlign = 'center';
-  ctx.fillText(game.systemMessage, canvas.width / 2, 49);
+  ctx.fillText(game.message, canvas.width / 2, 47);
   ctx.textAlign = 'left';
 }
 
-function handleInput() {
-  if (game.controls.action) {
-    window.setTimeout(() => {
-      game.controls.action = false;
-    }, 200);
-    performAction();
-  }
-}
+function gameLoop(ts) {
+  const dt = Math.min((ts - game.lastTime) / 1000 || 0.016, 0.033);
+  game.lastTime = ts;
 
-function gameLoop(timestamp) {
-  let dt = (timestamp - game.lastTime) / 1000 || 0;
-  game.lastTime = timestamp;
-
-  dt = Math.min(dt, 0.033);
-
-  if (game.started) {
-    updateGame(dt);
-    handleInput();
-  }
-
+  if (game.started) updateGame(dt);
   drawBackground();
   requestAnimationFrame(gameLoop);
 }
 
-function attachKeyboard() {
-  window.addEventListener('keydown', (event) => {
-    const key = event.key;
-    if (key === 'w' || key === 'ArrowUp') game.controls.up = true;
-    if (key === 's' || key === 'ArrowDown') game.controls.down = true;
-    if (key === 'a' || key === 'ArrowLeft') game.controls.left = true;
-    if (key === 'd' || key === 'ArrowRight') game.controls.right = true;
-    if (key === 'e' || key === 'E') game.controls.action = true;
-  });
-
-  window.addEventListener('keyup', (event) => {
-    const key = event.key;
-    if (key === 'w' || key === 'ArrowUp') game.controls.up = false;
-    if (key === 's' || key === 'ArrowDown') game.controls.down = false;
-    if (key === 'a' || key === 'ArrowLeft') game.controls.left = false;
-    if (key === 'd' || key === 'ArrowRight') game.controls.right = false;
-    if (key === 'e' || key === 'E') game.controls.action = false;
-  });
+function keyState(key, val) {
+  if (key === 'w' || key === 'ArrowUp') game.controls.up = val;
+  if (key === 's' || key === 'ArrowDown') game.controls.down = val;
+  if (key === 'a' || key === 'ArrowLeft') game.controls.left = val;
+  if (key === 'd' || key === 'ArrowRight') game.controls.right = val;
+  if (key === 'e' || key === 'E') game.controls.action = val;
 }
 
-function attachTouch() {
-  document.querySelectorAll('.touch-btn').forEach((btn) => {
-    const direction = btn.dataset.key;
-    const setState = (value) => {
-      if (direction === 'ArrowUp') game.controls.up = value;
-      if (direction === 'ArrowDown') game.controls.down = value;
-      if (direction === 'ArrowLeft') game.controls.left = value;
-      if (direction === 'ArrowRight') game.controls.right = value;
-    };
+window.addEventListener('keydown', (e) => {
+  keyState(e.key, true);
+  if (e.key === 'e' || e.key === 'E') doAction();
+});
+window.addEventListener('keyup', (e) => keyState(e.key, false));
 
-    btn.addEventListener('pointerdown', (event) => {
-      event.preventDefault();
-      setState(true);
-    });
-
-    btn.addEventListener('pointerup', () => setState(false));
-    btn.addEventListener('pointerleave', () => setState(false));
-    btn.addEventListener('pointercancel', () => setState(false));
-  });
-
-  touchActionBtn.addEventListener('pointerdown', (event) => {
-    event.preventDefault();
-    handleActionFromTouch();
-  });
+function touchSet(key, pressed) {
+  if (key === 'up') game.controls.up = pressed;
+  if (key === 'down') game.controls.down = pressed;
+  if (key === 'left') game.controls.left = pressed;
+  if (key === 'right') game.controls.right = pressed;
 }
 
-function handleActionFromTouch() {
-  game.controls.action = true;
-  performAction();
-  setTimeout(() => {
-    game.controls.action = false;
-  }, 120);
-}
+document.querySelectorAll('.touchBtn').forEach((btn) => {
+  const key = btn.dataset.key;
+  const press = (value) => {
+    touchSet(key, value);
+  };
+  btn.addEventListener('pointerdown', (e) => { e.preventDefault(); press(true); });
+  btn.addEventListener('pointerup', () => press(false));
+  btn.addEventListener('pointerleave', () => press(false));
+  btn.addEventListener('pointercancel', () => press(false));
+});
 
-function attachUi() {
-  startButton.addEventListener('click', startGame);
-  closeDialogBtn.addEventListener('click', () => {
-    dialogBox.classList.add('hidden');
-    game.currentDialog = null;
-  });
-}
+touchAction.addEventListener('pointerdown', (e) => {
+  e.preventDefault();
+  doAction();
+});
 
-function init() {
-  initLanguageButtons();
-  attachKeyboard();
-  attachTouch();
-  attachUi();
-  refreshHud();
-  requestAnimationFrame(gameLoop);
-}
+startBtn.addEventListener('click', startGame);
+closeDialogBtn.addEventListener('click', closeDialog);
+document.querySelectorAll('.langBtn').forEach((btn) => {
+  btn.addEventListener('click', () => setSelectedLanguage(btn.dataset.lang));
+});
 
-init();
+setSelectedLanguage('nl');
+refreshHud();
+requestAnimationFrame(gameLoop);
